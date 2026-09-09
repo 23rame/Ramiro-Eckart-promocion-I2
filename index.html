@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <div id="modales">
+        <div id="ventana-modal1">
+            <h1 class="titulo">NOSOTROS</h1>
+            <p class="parrafo">Creamos tu presencia en la web fortaleciendo la imágen de tu marca mediante un diseño web moderno, un
+                manejo efectivo de las redes sociables y a través técnicas de SEO lograr un óptimo posicionamiento en 
+                buscadores.
+            </p>
+            <button onclick="cerrar('ventana-modal1','modales')">X</button>
+        </div>
+        <div id="ventana-modal2">
+            <h1 class="titulo">NUESTROS SERVICIOS</h1>
+            <p>Ofrecemos a nuestros clientes la posibilidad de ampliar su mercado comercial desde la llegada en prospectos desde internet. Desarrollamos Sitios Web a Medida y Acciones de Marketing Digital para Empresas de alto valor agregado, son servicios profecionales, técnicos y tecnológicos.</p>
+            <button onclick="cerrar('ventana-modal2','modales')">X</button>
+        </div>
+    </div>
+    <div id="cuerpo"> <!--CONTIENE CONTENEDOR IZQUIERO Y CONTENEDOR DERECHO-->
+        <div id="menu"> 
+            <nav>
+                <ul>
+                    <li><form id="FormuHora" name="Reloj"><input type="text" id="Clock"></form></li>
+                    <li><a onclick="desplegar()" id="home" onmouseover="over('home')" onmouseout="out('home')">HOME</a></li>
+                    <li><a onclick="abrir('ventana-modal1','modales')" onmouseover="over('nos')" onmouseout="out('nos')" id="nos">NOSOTROS</a></li>
+                    <li><a href="" onmouseover="over('por')" onmouseout="out('por')" id="por">PORTFOLIO</a></li>
+                    <li><a href="" onmouseover="over('cap')" onmouseout="out('cap')" id="cap">CAPACITACIONES</a></li>
+                    <li><a onmouseover="over('sec')" onmouseout="out('sec')" onclick="abrir('ventana-modal2','modales')" id="sec">SERVICIOS</a></li>
+                    <li><a href="" onmouseover="over('cli')" onmouseout="out('cli')" id="cli">CLIENTES</a></li>
+                    <li><a href="" onmouseover="over('con')" onmouseout="out('con')" id="con">CONTACTO</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div id="contenido-pagina">  <!-- CONTIENE 4 CONTENEDORES PPALES DE LA PAG Y EL MENU DESPLEGABLE-->
+            <div id="menu-desplegable"> 
+                <nav>
+                    <ul>
+                        <li id="home"><a onclick="desplegar()">HOME</a><a onclick="cerra()" id="desplegable-boton">x</a></li>
+                        <li>
+                            <div id="desplegable-bg">
+                                <ul id="desplegable">
+                                    <li><a onclick="abrir('ventana-modal1','modales')">NOSOTROS</a></li>
+                                    <li><a href="">PORTFOLIO</a></li>
+                                    <li><a href="">CAPACITACIONES</a></li>
+                                    <li><a onclick="abrir('ventana-modal2','modales')">SERVICIOS</a></li>
+                                    <li><a href="">CLIENTES</a></li>
+                                    <li><a href="">CONTACTO</a></li>
+                                </ul>
+                            </div>
+                        </li> 
+                    </ul>
+                </nav>
+            </div>
+            <div id="banner">
+                <img src="imagenes/l1.jpg" class="slides">
+                <img src="imagenes/l2.jpg" class="slides">
+                <img src="imagenes/l3.jpg" class="slides">
+                <img src="imagenes/l4.png" class="slides">
+                <img src="imagenes/l5.jpg" class="slides">
+            </div>
+            <div id="nosotros">
+                <div id="parrafos">
+                    <h1 class="titulo">NOSOTROS</h1>
+                    <hr>
+                    <p class="parrafo">Creamos tu presencia en la web fortaleciendo la imágen de tu marca mediante un diseño web moderno, un
+                        manejo efectivo de las redes sociables y a través técnicas de SEO lograr un óptimo posicionamiento en 
+                        buscadores.
+                    </p>
+                    <h1>PORQUE NOS ELIGEN</h1>
+                    <p class="parrafo">Somos una agencia de <b>diseño web</b> y <b>branding</b>, situada en el corazón de <b>Córdoba Argentina</b>; la calidad de
+                    nuestros trabajos incorpora el último avance en el <b>diseño web</b>, asegurando la mejor experiencia para los
+                    usuarios que navegan en una pc de escritorio, notebook, teléfono inteligente o tablet.. Nuestro objetivo es
+                    generar una presencia positiva y eficiente de tu marca mediante una variedad de instrumentos acordes a cada proyecto.
+                    </p>
+                </div>
+                <div id="nosotros-fortalezas">
+                    <div class="fortaleza">
+                        <h1>SER LA DIFERENCIA</h1>
+                        <div class="contenedor-icono">
+                            <img src="imagenes/coded-with-love.png">
+                        </div>
+                        <p class="parrafo">Trabajamos con la filosofía de <b>"ser el factor que impulse a nuestros clientes en cumplimiento de sus propios objetivos"</b></p>
+                    </div>
+                    <div class="fortaleza">
+                        <h1>CALIDAD</h1>
+                        <div class="contenedor-icono">
+                            <img src="imagenes/responsive.png">
+                        </div>
+                        <p class="parrafo">Es la confianza y reconocimiento de nuestros clientes es lo que nos ha permitido seguir creciendo y fortaleciendo nuestras convicciones
+                            desde el año 2005.
+                        </p>
+                    </div>
+                    <div class="fortaleza">
+                        <h1>DAR SOLUCIONES</h1>
+                        <div class="contenedor-icono">
+                            <img src="imagenes/for-portfolio.png">
+                        </div>
+                        <p class="parrafo">Proveemos servicios creativos de consultoría, diseño gráfico, desarrollo web y multimedia. Buscamos cumplir las metas con el máximo de
+                            <b>Creatividad y Eficiencia.</b>
+                        </p>
+                    </div>
+                    <div class="fortaleza">
+                        <h1>ENTENDEMOS TU NECESIDAD</h1>
+                        <div class="contenedor-icono">
+                            <img src="imagenes/customizable.png">
+                        </div>
+                        <p class="parrafo">Este punto es crítico a la hora de analizar, crear y desarrollar una estrategia Web completa y que funcione correctamente para poder cumplir
+                            las expectativas de nustros clientes
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div id="proyectos-recientes">
+                <h1 class="titulo">PROYECTOS RECIENTES</h1>
+                <hr>
+                <p>Entre los proyectos realizados en el lapso de los años 2016 y 2018 podemos encontrar entre nuestros clientes a:</p>
+                <div id="contenedor-portfolio">
+                    <div class="contenedor-proyecto">
+                        <img src="imagenes/p1.png" class="imagen">
+                    </div>
+                    <div class="contenedor-proyecto">
+                        <img src="imagenes/p2.jpg" class="imagen">
+                    </div>
+                    <div class="contenedor-proyecto">
+                        <img src="imagenes/p3.jpg" class="imagen">
+                    </div>
+                    <div class="contenedor-proyecto">
+                        <img src="imagenes/p4.jpg" class="imagen">
+                    </div>
+                    <div class="contenedor-proyecto">
+                        <img src="imagenes/p5.jpg" class="imagen">
+                    </div>
+                    <div class="contenedor-proyecto">
+                        <img src="imagenes/p6.jpg" class="imagen">
+                    </div>
+                    <div class="contenedor-proyecto">
+                        <img src="imagenes/p7.jpg" class="imagen">
+                    </div>
+                    <div class="contenedor-proyecto">
+                        <img src="imagenes/p8.jpg" class="imagen">
+                    </div>
+                    <div class="contenedor-proyecto">
+                        <img src="imagenes/p9.jpg" class="imagen">
+                    </div>
+                </div>
+            </div>
+            <div id="nuestros servicios">
+                <h1 class="titulo">NUESTROS SERVICIOS</h1>
+                <hr>
+                <p>Ofrecemos a nuestros clientes la posibilidad de ampliar su mercado comercial desde la llegada en prospectos desde internet. Desarrollamos Sitios Web a Medida y Acciones de Marketing Digital para Empresas de alto valor agregado, son servicios profecionales, técnicos y tecnológicos.</p>
+                <div id="servicios-contenedor">
+                    <div class="contenedor-servicio">
+                        <img src="imagenes/s1.png" class="imagen">
+                        <h3>E-Commerce</h3>
+                    </div>
+                    <div class="contenedor-servicio">
+                        <img src="imagenes/s2.png" class="imagen">
+                        <h3>Buscadores</h3>
+                    </div>
+                    <div class="contenedor-servicio">
+                        <img src="imagenes/s3.png" class="imagen">
+                        <h3>Webs</h3>
+                    </div>
+                    <div class="contenedor-servicio">
+                        <img src="imagenes/s4.png" class="imagen">
+                        <h3>Redes</h3>
+                    </div>
+                    <div class="contenedor-servicio">
+                        <img src="imagenes/s5.png" class="imagen">
+                        <h3>Aplicaciones</h3>
+                    </div>
+                    <div class="contenedor-servicio">
+                        <img src="imagenes/s6.png" class="imagen">
+                        <h3>SEO</h3>
+                    </div>
+                    <div class="contenedor-servicio">
+                        <img src="imagenes/s7.png" class="imagen">
+                        <h3>Cursos y Talleres</h3>
+                    </div>
+                    <div class="contenedor-servicio">
+                        <img src="imagenes/s8.png" class="imagen">
+                        <h3>Publicidad</h3>
+                    </div>
+                    <div class="contenedor-servicio">
+                        <img src="imagenes/s9.png" class="imagen">
+                        <h3>Hosting</h3>
+                    </div>
+                    <div class="contenedor-servicio">
+                        <img src="imagenes/s10.png" class="imagen">
+                        <h3>Asesoramiento</h3>
+                    </div>
+                    <div class="contenedor-servicio">
+                        <img src="imagenes/s11.png" class="imagen">
+                        <h3>Marcas</h3>
+                    </div>
+                    <div class="contenedor-servicio">
+                        <img src="imagenes/s12.png" class="imagen">
+                        <h3>Soporte tecnico</h3>
+                    </div>
+                </div>
+            </div>
+            <div id="consultas">
+                <h1 class="titulo">ENVIANOS TU CONSULTA</h1>
+                <hr>
+                <form id="formulario">
+                    <input placeholder="Nombre y Apellido*">
+                    <input placeholder="Email*">
+                    <input placeholder="Tema/motivo*">
+                    <textarea placeholder="Tu consulta aqui...*" rows="20"></textarea>
+                    <button id="boton">Enviar Datos</button>
+                </form>
+            </div>
+            <footer>
+                <div id="redes">
+                    <a href="https://www.facebook.com"><img src="imagenes/facebook.png"></a>
+                    <a href="https://www.twittercom"><img src="imagenes/twitter.png"></a>
+                    <a href="https://www.linkedin.com"><img src="imagenes/linkedin.png"></a>
+                </div>
+                <h3>Copyright</h3>
+            </footer>
+        </div>
+    </div>
+    <script src="javascript.js"></script>
+</body>
+</html>
